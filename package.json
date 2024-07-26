@@ -7,7 +7,7 @@
   "description": "Project Clone of Airbnb",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "author": "Rajput Shivam Singh",
   "license": "ISC",
