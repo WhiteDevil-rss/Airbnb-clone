@@ -36,9 +36,15 @@ CLOUD_API_SECRET=your_cloudinary_api_secret
 ```
 *(Make sure to replace the placeholder values with your actual credentials.)*
 
-### 4. Run the Application
+### 4. Initialize Database
+Before running the application, you need to populate the database with the initial dummy data. Since the project uses environment variables, you should pass the `.env` file to the initialization script (Requires Node.js v20.6+):
+```bash
+node --env-file=.env init/index.js
+```
+
+### 5. Run the Application
 Start the server using npm:
 ```bash
-npm start
+node --env-file=.env app.js
 ```
 The server should now be running on port 8080. You can access it by opening your browser and navigating to [http://localhost:8080](http://localhost:8080).
